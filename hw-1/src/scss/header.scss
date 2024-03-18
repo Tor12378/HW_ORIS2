@@ -1,0 +1,96 @@
+.header {
+  height: 200px;
+  width: 100%;
+  background-color: #072ac8;
+  text-align: center;
+  background-image: url("../../public/assets/img/pokeball.png");
+  background-size: 200px;
+  background-position-x: 105%;
+  background-position-y: 1250%;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+
+  &_title {
+    margin: 0;
+    padding: 30px 0 0;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  &_search-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_search {
+    max-width: 1200px;
+  }
+
+  &_form {
+    position: relative;
+  }
+
+  &_input {
+    width: 500px;
+    background-image: url(../../public/assets/img/search_logo.svg);
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+    margin-top: 40px;
+    display: inline-flex;
+    padding-left: 40px;
+  }
+
+  &_button {
+    position: absolute;
+    height: 39px;
+    bottom: 0;
+    right: 0;
+    width: 72px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+
+  @media only screen and (max-width: 690px) {
+    &_title {
+      display: flex;
+    }
+
+    &_input {
+      max-width: 100%;
+    }
+
+    &_search {
+      display: flex;
+      justify-content: center;
+    }
+
+    &_form {
+      margin-bottom: 10px;
+    }
+
+    &_input {
+      max-height: 40%;
+      max-width: 300px;
+    }
+
+    & {
+      height: 30%;
+      width: 100%;
+      background-color: #072ac8;
+      text-align: center;
+      background-image: url("../../public/assets/img/pokeball.png");
+      background-size: 200px;
+      background-position-x: 138%;
+      background-position-y: -241%;
+      background-repeat: no-repeat;
+      background-blend-mode: overlay;
+    }
+  }
+}
